@@ -1,0 +1,22 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App {
+    padding: 20px;
+}
+@media( min-width: 768px) {
+    .App {
+        display: flex;
+        align-items: center;
+        &.split-view {
+            > table,
+            .form-container {
+                width: 50%;
+            }
+        }
+    }
+}

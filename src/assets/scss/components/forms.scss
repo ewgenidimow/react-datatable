@@ -1,0 +1,35 @@
+.form-container {
+    padding: 20px;
+    position: relative;
+    > button {
+        position: absolute;
+        top: -20px;
+        right: 20px;
+        background-color: transparent;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        img {
+            width: 20px;
+        }
+    }
+}
+
+.field-container {
+    + .field-container {
+        margin-top: 20px;
+    }
+    label {
+        display: inline-block;
+    }
+    input[type='text'],
+    select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        outline: none;
+    }
+    input[type='checkbox'] {
+        display: inline-block;
+    }
+}

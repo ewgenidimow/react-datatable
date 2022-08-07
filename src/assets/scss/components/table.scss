@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    tr {
+        cursor: pointer;
+        th {
+            border-top: 2px solid;
+            border-bottom: 2px solid;
+            padding: 5px;
+            text-align: left;
+        }
+        td {
+            white-space: nowrap;
+            padding: 5px;
+            border-bottom: 1px solid;
+            vertical-align: middle;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            img {
+                max-width: 20px;
+            }
+        }
+        &.active,
+        &:hover {
+            td {
+                background: #d2d5da;
+            }
+        }
+    }
+}
