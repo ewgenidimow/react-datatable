@@ -37,8 +37,8 @@ function Edit({data, editData, handleEditFormChange, handleClose}) {
                     ))}
                 </div>
             ))}
-            <button onClick={handleClose}>
-                <img src={cancelIcon}/>
+            <button onClick={handleClose} data-testid={'close-edit'}>
+                <img src={cancelIcon} alt={'cancel button'}/>
             </button>
         </div>
     )

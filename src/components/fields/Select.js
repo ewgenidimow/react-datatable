@@ -3,9 +3,10 @@ const Select = (props) => {
         <div className='form-field'>
             <label>{props.label}</label>
 
-            <select name={props.name}
+            <select data-testid='select'
+                    name={props.name}
                     value={props.value}
-                    onChange={props.handleOnChange}>
+                    onChange={(e) => props.handleOnChange(e)}>
 
                 {props.options.map((option, index) => (
                     <option key={index} value={option.name}>{option.text}</option>
